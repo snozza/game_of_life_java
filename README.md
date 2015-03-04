@@ -1,2 +1,2 @@
 # game_of_life_java
-Game of Life in Java
+Game of Life in Java - TDD with JUnit
