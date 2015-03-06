@@ -8,6 +8,6 @@ public class CellTest {
 
   @Test
   public void diesWithOnlyOneNeighbour() {
-    new Cell();
+    Cell uut = new Cell(Cell.CellState.ALIVE);
   }
 }
