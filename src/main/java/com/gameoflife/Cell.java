@@ -1,7 +1,5 @@
 package gameoflife;
 
-import gameoflife.Cell.CellState;
-
 public class Cell {
 
   private CellState state;
