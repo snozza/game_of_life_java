@@ -9,4 +9,5 @@ public class CellTest {
   @Test
   public void diesWithOnlyOneNeighbour() {
     new Cell();
+  }
 }
