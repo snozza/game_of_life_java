@@ -13,4 +13,11 @@ public class CellTest {
     CellState expected = Cell.CellState.DEAD; 
     assertThat(uut.getNextState(1)).isEqualTo(expected);
   }
+
+  @Test
+  public void diesWithZeroNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.DEAD;
+    assertThat(uu.getNextState(0)).isEqualTo(expected);
+  }
 }
