@@ -11,4 +11,8 @@ public class Cell {
   public enum CellState {
     ALIVE, DEAD
   }
+
+  public CellState getNextState(int i) {
+    return null;
+  }
 }
