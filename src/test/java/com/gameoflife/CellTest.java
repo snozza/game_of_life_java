@@ -22,7 +22,14 @@ public class CellTest {
   }
 
   @Test
-  public void livesWithTwoNeighbours() {
+  public void livesOnWithTwoNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.ALIVE;
+    assertThat(uut.getNextState(2)).isEqualTo(expected);
+  }
+
+  @Test
+  public void livesOnWithThreeNeighbours() {
     Cell uut = new Cell(Cell.CellState.ALIVE);
     CellState expected = Cell.CellState.ALIVE;
     assertThat(uut.getNextState(2)).isEqualTo(expected);
