@@ -18,6 +18,13 @@ public class CellTest {
   public void diesWithZeroNeighbours() {
     Cell uut = new Cell(Cell.CellState.ALIVE);
     CellState expected = Cell.CellState.DEAD;
-    assertThat(uu.getNextState(0)).isEqualTo(expected);
+    assertThat(uut.getNextState(0)).isEqualTo(expected);
+  }
+
+  @Test
+  public void livesWithTwoNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.ALIVE;
+    assertThat(uut.getNextState(2)).isEqualTo(expected);
   }
 }
