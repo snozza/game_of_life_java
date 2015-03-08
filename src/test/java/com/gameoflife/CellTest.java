@@ -11,60 +11,36 @@ import gameoflife.Cell.CellState;
 public class CellTest {
 
   @Test
-  public void diesWithOnlyOneNeighbour() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD; 
-    assertThat(uut.getNextState(1)).isEqualTo(expected);
+  @Parameters({
+    "ALIVE, 0, DEAD",
+    "ALIVE, 1, DEAD",
+    "ALIVE, 2, ALIVE",
+    "ALIVE, 3, ALIVE",
+    "ALIVE, 4, DEAD",
+    "ALIVE, 5, DEAD",
+    "ALIVE, 6, DEAD",
+    "ALIVE, 7, DEAD",
+    "ALIVE, 8, DEAD",
+    "ALIVE, 9, DEAD",
+    "DEAD, 0, DEAD",
+    "DEAD, 0, DEAD",
+    "DEAD, 0, DEAD",
+    "DEAD, 3, ALIVE",
+    "DEAD, 4, DEAD",
+    "DEAD, 5, DEAD",
+    "DEAD, 6, DEAD",
+    "DEAD, 7, DEAD",
+    "DEAD, 8, DEAD",
+    "DEAD, 9, DEAD"})
+
+  public void fulfillsStateTransitions(String initial, int noOfNeighbours, String expected) {
+    CellState initialState = CellState.valueOf(initial);
+    Cell uut = new Cell(initialState);
+    CellState expectedState = Cell.CellState.valueOf(expected);
+    CellState actual = uut.getNextState(noOfNeighbours);
+    assertThat(actual).isEqualTo(expectedState);
   }
 
-  @Test
-  public void diesWithZeroNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(0)).isEqualTo(expected);
-  }
-
-  @Test
-  public void livesOnWithTwoNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.ALIVE;
-    assertThat(uut.getNextState(2)).isEqualTo(expected);
-  }
-
-  @Test
-  public void livesOnWithThreeNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.ALIVE;
-    assertThat(uut.getNextState(2)).isEqualTo(expected);
-  }
-
-  @Test public void diesWithFourNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(4)).isEqualTo(expected);
-  }
-
-  @Test public void diesWithFiveNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(5)).isEqualTo(expected);
-  }
-  
-  @Test public void diesWithSixNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(6)).isEqualTo(expected);
-  }
-
-  @Test public void diesWithSevenNeighbours() {
-    Cell uut = new Cell(Cell.CellState.ALIVE);
-    CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(7)).isEqualTo(expected);
-  }
-
-  @Test public void becomesAliveWithThreeNeighbours() {
-    Cell uut = new Cell(Cell.CellState.DEAD);
-    CellState expected = Cell.CellState.ALIVE;
-    assertThat(uut.getNextState(3)).isEqualTo(expected);
-  }
 }
+
+
