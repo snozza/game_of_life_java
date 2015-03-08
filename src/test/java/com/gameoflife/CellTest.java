@@ -34,4 +34,11 @@ public class CellTest {
     CellState expected = Cell.CellState.ALIVE;
     assertThat(uut.getNextState(2)).isEqualTo(expected);
   }
+
+  @Test public void diesWithFourNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.DEAD;
+    assertThat(uut.getNextState(5)).isEqualTo(expected);
+  }
+
 }
