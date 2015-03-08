@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameoflife.CellTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-08T10:53:50" hostname="Andrews-MacBook-Pro-3.local" time="0.047">
+<testsuite name="gameoflife.CellTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-03-08T11:43:26" hostname="Andrews-MacBook-Pro-3.local" time="0.036">
   <properties/>
-  <testcase name="diesWithFiveNeighbours" classname="gameoflife.CellTest" time="0.045"/>
+  <testcase name="diesWithFiveNeighbours" classname="gameoflife.CellTest" time="0.028"/>
   <testcase name="diesWithSixNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="diesWithSevenNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="diesWithFourNeighbours" classname="gameoflife.CellTest" time="0.0"/>
-  <testcase name="livesOnWithThreeNeighbours" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="livesOnWithThreeNeighbours" classname="gameoflife.CellTest" time="0.001"/>
   <testcase name="livesOnWithTwoNeighbours" classname="gameoflife.CellTest" time="0.0"/>
-  <testcase name="diesWithOnlyOneNeighbour" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="diesWithOnlyOneNeighbour" classname="gameoflife.CellTest" time="0.001"/>
   <testcase name="diesWithZeroNeighbours" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="becomesAliveWithThreeNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

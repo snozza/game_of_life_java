@@ -1,10 +1,13 @@
 package gameoflife;
 
 import org.junit.Test;
-
+import org.junit.runner.RunWith;
 import static org.assertj.core.api.Assertions.*;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import gameoflife.Cell.CellState;
 
+@RunWith(JUnitParamsRunner.class)
 public class CellTest {
 
   @Test
@@ -57,5 +60,11 @@ public class CellTest {
     Cell uut = new Cell(Cell.CellState.ALIVE);
     CellState expected = Cell.CellState.DEAD;
     assertThat(uut.getNextState(7)).isEqualTo(expected);
+  }
+
+  @Test public void becomesAliveWithThreeNeighbours() {
+    Cell uut = new Cell(Cell.CellState.DEAD);
+    CellState expected = Cell.CellState.ALIVE;
+    assertThat(uut.getNextState(3)).isEqualTo(expected);
   }
 }
