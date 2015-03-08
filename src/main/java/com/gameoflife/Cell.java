@@ -19,4 +19,9 @@ public class Cell {
       return i == 3 ? CellState.ALIVE : CellState.DEAD;
     }
   }
+
+  public CellState getState() {
+    return state;
+  }
+
 }

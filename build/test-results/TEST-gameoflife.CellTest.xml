@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameoflife.CellTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2015-03-08T15:03:18" hostname="Andrews-MacBook-Pro-3.local" time="0.099">
+<testsuite name="gameoflife.CellTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2015-03-08T18:38:04" hostname="Andrews-MacBook-Pro-3.local" time="0.108">
   <properties/>
-  <testcase name="[0] ALIVE, 0, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.032"/>
-  <testcase name="[1] ALIVE, 1, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.001"/>
+  <testcase name="[0] ALIVE, 0, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.034"/>
+  <testcase name="[1] ALIVE, 1, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[2] ALIVE, 2, ALIVE (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[3] ALIVE, 3, ALIVE (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[4] ALIVE, 4, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
@@ -14,13 +14,15 @@
   <testcase name="[10] DEAD, 0, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[11] DEAD, 0, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[12] DEAD, 0, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
-  <testcase name="[13] DEAD, 3, ALIVE (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.002"/>
+  <testcase name="[13] DEAD, 3, ALIVE (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[14] DEAD, 4, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[15] DEAD, 5, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.001"/>
-  <testcase name="[16] DEAD, 6, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.002"/>
+  <testcase name="[16] DEAD, 6, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[17] DEAD, 7, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.001"/>
   <testcase name="[18] DEAD, 8, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="[19] DEAD, 9, DEAD (fulfillsStateTransitions)" classname="gameoflife.CellTest" time="0.001"/>
+  <testcase name="[0] ALIVE (returnsCellState)" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="[1] DEAD (returnsCellState)" classname="gameoflife.CellTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
