@@ -38,7 +38,24 @@ public class CellTest {
   @Test public void diesWithFourNeighbours() {
     Cell uut = new Cell(Cell.CellState.ALIVE);
     CellState expected = Cell.CellState.DEAD;
-    assertThat(uut.getNextState(5)).isEqualTo(expected);
+    assertThat(uut.getNextState(4)).isEqualTo(expected);
   }
 
+  @Test public void diesWithFiveNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.DEAD;
+    assertThat(uut.getNextState(5)).isEqualTo(expected);
+  }
+  
+  @Test public void diesWithSixNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.DEAD;
+    assertThat(uut.getNextState(6)).isEqualTo(expected);
+  }
+
+  @Test public void diesWithSevenNeighbours() {
+    Cell uut = new Cell(Cell.CellState.ALIVE);
+    CellState expected = Cell.CellState.DEAD;
+    assertThat(uut.getNextState(7)).isEqualTo(expected);
+  }
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameoflife.CellTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-03-08T01:13:44" hostname="Andrews-MacBook-Pro-3.local" time="0.046">
+<testsuite name="gameoflife.CellTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-03-08T10:53:50" hostname="Andrews-MacBook-Pro-3.local" time="0.047">
   <properties/>
-  <testcase name="diesWithFourNeighbours" classname="gameoflife.CellTest" time="0.044"/>
+  <testcase name="diesWithFiveNeighbours" classname="gameoflife.CellTest" time="0.045"/>
+  <testcase name="diesWithSixNeighbours" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="diesWithSevenNeighbours" classname="gameoflife.CellTest" time="0.0"/>
+  <testcase name="diesWithFourNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="livesOnWithThreeNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="livesOnWithTwoNeighbours" classname="gameoflife.CellTest" time="0.0"/>
   <testcase name="diesWithOnlyOneNeighbour" classname="gameoflife.CellTest" time="0.0"/>
