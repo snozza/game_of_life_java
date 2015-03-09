@@ -22,4 +22,11 @@ public class UniverseTest {
     assertThat(actual).isEqualTo(original);
   }
 
+  @Test
+  public void updatesCell() {
+    Universe uut = new Universe(new CellState[][]{{X}});
+    uut.update();
+    CellState actual[][] = uut.getState();
+    assertThat(actual[0][0]).isEqualTo(CellState.DEAD);
+  }
 }
